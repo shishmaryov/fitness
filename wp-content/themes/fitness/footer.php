@@ -13,22 +13,22 @@
 
 <footer>
          <div class="container">
-            <div class="footer-title">Фитнес центр</div>
+            <div class="footer-title"><?php the_field('site_name', 'options'); ?></div>
             <div class="footer-action">
                <a href="<?php echo get_template_directory_uri(); ?>/index.html#modal-call" data-toggle="modal" class="btn main-btn">Заказать звонок</a>
                <div class="contact">
-                  <span class="adress">Москва, ул. Большая, д.10</span>
-                  <a href="tel:+74950000000">+7 (495) 000-00-00</a>
+                  <span class="adress"><?php the_field('site_address', 'options'); ?></span>
+                  <a href="tel:<?php the_field('site_logo', 'options'); ?>"><?php the_field('site_phone', 'options'); ?></a>
                </div>
             </div>
             <div class="footer-bottom">
                <div class="row">
                   <div class="col-sm-6">
-                     <div class="copyright">© Все права защищены.
+                     <div class="copyright"><?php the_field('site_descr', 'options'); ?>
                      </div>
                   </div>
                   <div class="col-sm-6">
-                     <a href="index.html#modal-privacy" data-toggle="modal" class="link-privacy">Политика конфиденциальности</a>
+                     <a href="index.html#modal-privacy" data-toggle="modal" class="link-privacy"><?php the_field('site_policy_title', 'options'); ?></a>
                   </div>
                </div>
             </div>

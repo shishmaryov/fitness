@@ -36,8 +36,8 @@
                <span class="icon-bar"></span>
                <span class="icon-bar"></span>
                </button>
-               <a class="navbar-brand" href="<?php echo get_template_directory_uri(); ?>/index.html">
-               <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="">
+               <a class="navbar-brand" href="/../">
+               <img src="<?php the_field('site_logo', 'options'); ?>" alt="">
                </a>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -48,7 +48,7 @@
                   <li><a href="<?php echo get_template_directory_uri(); ?>/index.html#review" class="animate-scroll">Отзывы</a></li>
                   <li><a href="<?php echo get_template_directory_uri(); ?>/index.html#contact" class="animate-scroll">Контакты</a></li>
                   <li class="phone">
-                     <a href="tel:+74950000000">+7 (495) 000-00-00</a>
+                     <a href="tel:<?php the_field('site_logo', 'options'); ?>"><?php the_field('site_phone', 'options'); ?></a>
                   </li>
                </ul>
             </div>
